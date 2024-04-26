@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    background-color:initial;
+   
+}
+
+body{
+   background-color: black;
+}
+
+.box{
+   position:absolute;
+
+}
+.header{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height:120px;
+}
+
+.buscadores{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+}
+
+
+@media (max-width: 768px) {
+        .header {
+            height: initial;
+        }
+    }
+
+.barranav{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 1.5rem 0;
+   flex-wrap: wrap;
+  
+   
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.boton{
+    background-color: #9f3647;
+    border-radius: 5px;
+    padding:1vw 1vw;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #9f3647;
+     
+    }
+}
+
+.iniciosesion{
+ background-color:black ;
+ color:white ;
+ border-radius: 5px; 
+ padding:1vw 1vw;
+ transition: transform 0.3s, box-shadow 0.3s;
+ &:hover {
+     background-color: #9f3647;
+ }
+   
+}
+
+.enlaceboton{
+
+  
+    color: white;
+    border-radius: 5px;
+    padding: 1px 2px;
+}
+
+
+.animate__animated {
+     color: white;
+
+}
+
+h1 {
+    color:white;
+    padding: 2vw;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
+
+#contenedor{
+  position: relative;
+    text-align: center;
+
+}
+
+#registrate{
+
+    background-color: #9f3647;
+    color: white;
+}
+
+#buscador{
+    background-color: #9f3647;
+    border-radius: 20px;
+    border-bottom-width: 1px;
+     padding: 7px 20px;
+    
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+
+
+.subti{
+
+
+   display: inline;
+    color:white;
+    text-decoration: none;
+}
+
+
+.subti1{
+    color:white;
+    background-color:#9f3647;
+    border-radius: 3px;
+}
+
+
+li{
+    margin-top: 5px;
+    display:inline;
+    text-align: center;
+
+}
+
+.buscador{
+
+    text-align: center;
+}
+
+
+.conteinerimg{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+
+
+}
+
+.peliculas{
+
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition-property: opacity, transform, -webkit-transform;
+
+  
+}
+
+.contenedorfooter{
+    background-color: #9f3647;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+   justify-content:space-around;
+ align-content:center ;
+margin-top: 50px;
+ 
+
+
+
+}
+
+.item{
+     font-size: 20px;
+    color: white;
+    margin: 7px;
+    padding: 30px;
+
+}
+
+#subti3{
+    background: black;
+    border-radius: 3px;
+    margin: 30px;
+    padding: 5px;
+}
+
+
+input{
+    background-color:white ;
+
+}
+
+.conteinerboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.btn{
+    margin: 15px;
+    border:1px solid white;
+  
+}
+ 
+#aclamadasconteiner{
+    display: flex;
+    row-gap: 30px;
+ 
+
+    
+    
+
+}
+
+.peliculaitem{
+    height: 200px;
+    width: 150px;
+
+}
