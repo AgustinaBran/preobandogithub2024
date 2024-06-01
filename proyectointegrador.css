@@ -10,12 +10,13 @@
 body{
    background-color: black;
 }
-
+/*
 .box{
    position:absolute;
 
-}
+}*/
 .header{
+    margin: 0%;
     background-color: #9f3647;
     color: #ffffff;
     height: 10vh;
@@ -25,12 +26,34 @@ body{
     height:120px;
 }
 
-.buscadores{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
 
+.buscadores{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
 }
+
+#buscador{
+    background-color: #9f3647;
+    border-radius: 15px;
+    border: 2px solid white;
+ 
+     padding: 5px 10px;
+     color: antiquewhite;
+
+    
+}
+
+
+ .buscador2{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+ 
+ }
+
 
 
 @media (max-width: 768px) {
@@ -48,9 +71,6 @@ body{
     margin-right: 40px;
     padding: 1.5rem 0;
    flex-wrap: wrap;
-  
-   
-    
     
 }
 
@@ -66,7 +86,7 @@ a{
     transition: transform 0.3s, box-shadow 0.3s;
     &:hover {
         transition: transform 0.3s, box-shadow 0.3s;
-        background-color: #9f3647;
+       border:2px dotted #8e2c3c;
      
     }
 }
@@ -97,35 +117,56 @@ a{
 
 }
 
-h1 {
-    color:white;
-    padding: 2vw;
+h1{ 
+    color: antiquewhite;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
+
+
 
 h2{
     color: white;
 }
 
-#contenedor{
-  position: relative;
+h3{
     text-align: center;
-
+    margin: 40px;
+    color: aliceblue;
+    font-size: 40px;
 }
-
+/*
 #registrate{
 
-    background-color: #9f3647;
-    color: white;
+    background-color:#9f3647 ;
+   color:white;
 }
+*/
+.buscadores{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
 
 #buscador{
     background-color: #9f3647;
-    border-radius: 20px;
-    border-bottom-width: 1px;
-     padding: 7px 20px;
-    
-}
+    border-radius: 15px;
+    border: 2px solid white;
+ 
+     padding: 5px 10px;
+     color: antiquewhite;
+    }
+
+.buscador2{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+ 
+ }
 
 img{
     width:100%;
@@ -156,69 +197,80 @@ li{
 
 }
 
-.buscador{
+.Registro{
+   
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9f3647;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.banner{
+    width:100vw;
+    height: 900px;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size:100vw 900px;
+    display: flex;
+    flex-direction:column;
+   align-content: center;
+   justify-content: center;
+   gap: 20px;
 
-    text-align: center;
+align-items:center;
+  font-size: 2vw;
+   color: aliceblue;
+
 }
 
 
 .conteinerimg{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:space-evenly;
+ gap: 30px;
+ 
+ 
 
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction:row;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 60px;
-
+}
+.peliculas{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
 
 }
 
-.peliculas{
-
-    width: 200px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    transition-property: opacity, transform, -webkit-transform;
-
-  
+.peliculas:hover{
+    filter: blur(10px);
+    
 }
 
 .contenedorfooter{
     background-color: #9f3647;
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-   justify-content:space-around;
- align-content:center ;
-margin-top: 50px;
- 
-
-
-
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-content:center;
 }
 
 .item{
-     font-size: 20px;
+    /* font-size: 20px;
     color: white;
     margin: 7px;
-    padding: 30px;
+    padding: 30px;*/
+    align-self: center;
 
 }
 
-#subti3{
+.subti3{
     background: black;
     border-radius: 3px;
     margin: 30px;
     padding: 5px;
+    align-self: center;
 }
 
 
@@ -231,21 +283,22 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 30px;
 
 }
 
 .btn{
     margin: 15px;
     border:1px solid white;
+    transition: 0.3s, box-shadow 0,3s ;
   
 }
  
 #aclamadasconteiner{
     display: flex;
-    row-gap: 30px;
- 
-
-    
+    overflow-x: scroll;
+  overflow-y: hidden;
+   
     
 
 }
@@ -253,5 +306,12 @@ input{
 .peliculaitem{
     height: 200px;
     width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 
 }
+ 
+
+
