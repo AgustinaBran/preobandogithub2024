@@ -15,31 +15,31 @@
 <body>
 
  <div id="conteiner">
-      <form>
+      <form id="registroForm">
           <legend class=" registro">Registro</legend>
           <div class="mb-3">
-                <input type="text" id="disabledTextInput" class="form-control" placeholder=Nombre>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder=Nombre  required="">
           </div>
 
           <div class="mb-3">
-            <input type="text" id="disabledTextInput" class="form-control" placeholder=Apellido>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder=Apellido  required=""> 
          </div>
 
           <div class="mb-3">
-             <input type="text" id="disabledTextInput" class="form-control" placeholder="E-mail">
+             <input type="text" id="disabledTextInput" class="form-control" placeholder="E-mail"  required="">
           </div>
           <input type="date" placeholder="Fecha de Nacimiento (día/mes/año)" name="nacimiento" id="nacimientoInput"  required="">
           
           <div class="mb-3">
-            <select id="disabledSelect" class=" form-select">
-                <option>Pais</option>
-                <option>Argentina</option> 
-                <option>Brasil</option> 
-                <option>Uruguay</option> 
-                <option>Chile</option> 
-                <option>Paraguay</option> 
-                <option>Bolivia</option> 
-                <option>Peru</option> 
+            <select id="disabledSelect" class=" form-select" required>
+                <option value="">Pais</option>
+                <option value="Argentina">Argentina</option> 
+                <option value="Brasil">Brasil</option> 
+                <option value="Uruguay">Uruguay</option> 
+                <option value="Chile">Chile</option> 
+                <option value="Paraguay">Paraguay</option> 
+                <option value="Bolivia">Bolivia</option> 
+                <option value="Peru">Peru</option> 
 
             </select>
           </div>
@@ -51,8 +51,8 @@
             </div>
           </div>
      <div>
-            <button class="btn-primary" type="button">Registrarse</button>
-            <div>    <a href="#" class="item">Necesitas ayuda?</a> 
+            <button class="btn-primary" type="submit">Registrarse</button>
+            <div>    <a href="#" class="item"> ¿Necesitas ayuda?</a> 
           </div>
         </div>
         </form>
@@ -61,5 +61,6 @@
     
 
 
+<script src="administrare.js"></script>
 
 </body>
