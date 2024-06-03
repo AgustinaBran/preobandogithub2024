@@ -10,11 +10,7 @@
 body{
    background-color: black;
 }
-/*
-.box{
-   position:absolute;
 
-}*/
 .header{
     margin: 0%;
     background-color: #9f3647;
@@ -136,13 +132,7 @@ h3{
     color: aliceblue;
     font-size: 40px;
 }
-/*
-#registrate{
 
-    background-color:#9f3647 ;
-   color:white;
-}
-*/
 .buscadores{
     display: flex;
     justify-content: center;
@@ -290,7 +280,7 @@ input{
 .btn{
     margin: 15px;
     border:1px solid white;
-    transition: 0.3s, box-shadow 0,3s ;
+ 
   
 }
  
